@@ -2,7 +2,7 @@
 
 Explore the data-set of 35447 insects!
 
-Based on bugguide.net's data, I created an API to deliver insects' data under an accessible API. At present, the API only delivers the common name, genus, species, family, order, bug_guide_id, and bugguide.net URL information.
+Based on bugguide.net’s multiple .txt sets, I created an API to deliver insects’ data in JSON format. At present, the API only delivers the common name, genus, species, family, order, bug_guide_id, and bugguide.net URL information.
 
 ## API Endpoint
 
