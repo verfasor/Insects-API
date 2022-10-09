@@ -24,7 +24,7 @@ White space between the words are fine, mmkay.
 | Query Species  | ```GET https://bugs.verfasor.com/api?Species=pensylvanicus``` |
 | Query a Family  | ```GET https://bugs.verfasor.com/api?Family=Cantharidae``` |
 | Query an Order  | ```GET https://bugs.verfasor.com/api?Order=Coleoptera``` |
-| Query a Bug Guide ID  | ```https://bugs.verfasor.com/api?BugGuideID=438``` |
+| Query a Bug Guide ID  | ```GET https://bugs.verfasor.com/api?BugGuideID=438``` |
 | Query combination and filter  | ```GET https://bugs.verfasor.com/api?Order=Coleoptera&q=beetle``` |
 
 ## Alpha disclaimer
