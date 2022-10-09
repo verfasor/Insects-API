@@ -1,4 +1,6 @@
-# An Unofficial REST API for bugguide.net.
+# An Unofficial REST API for BugGuide.net
+
+![](https://github.com/migftw/bugguide-api/blob/master/BugGuide-API.png)
 
 Explore the data-set of 40511 insects!
 
@@ -27,8 +29,48 @@ White space between the words are fine, mmkay.
 | Query a Bug Guide ID  | ```GET https://bugs.verfasor.com/api?BugGuideID=438``` |
 | Query combination and filter  | ```GET https://bugs.verfasor.com/api?Order=Coleoptera&q=beetle``` |
 
+## Get a random bug info in Python
+
+```
+import requests
+import json
+import random
+
+seed = random.randint(0, 40510)
+print(seed)
+
+# API
+link = 'https://bugs.verfasor.com/api'
+
+# Request data
+data = requests.get(link).text
+
+# Print stuff you like
+number = json.loads(data)
+print("%s" % (number[seed]["Number"]))
+
+genus = json.loads(data)
+print("%s" % (genus[seed]["Genus"]))
+
+species = json.loads(data)
+print("%s" % (species[seed]["Species"]))
+
+family = json.loads(data)
+print("%s" % (family[seed]["Family"]))
+
+order = json.loads(data)
+print("%s" % (order[seed]["Order"]))
+
+bugguideid = json.loads(data)
+print("%s" % (bugguideid[seed]["BugGuideID"]))
+
+url = json.loads(data)
+print("%s" % (url[seed]["URL"]))
+
+commonname = json.loads(data)
+print("%s" % (commonname [seed]["CommonName"]))
+```
+
 ## Alpha disclaimer
 
-The bugs.verfasor.com REST API is actually in the alpha stage, which implies that "bugs" and issues may still remain undiscovered until this phase of testing is complete. The alpha stage also means that the data may be corrupted, is not 100% validated or complete, and is subject to change.
-
-Finally, services may have downtime and the API schemas and calls are subject to change
+The bugs.verfasor.com REST API is actually in the alpha stage, which implies that "bugs" and issues may still remain undiscovered until this phase of testing is complete. The alpha stage also means that the data may be corrupted, is not 100% validated or complete, and is subject to change. Finally, services may have downtime and the API schemas and calls are subject to change
