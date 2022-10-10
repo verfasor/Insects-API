@@ -73,4 +73,4 @@ print("%s" % (commonname [seed]["CommonName"]))
 
 ## Alpha disclaimer
 
-The Insecta JSON REST API is actually in the alpha stage, which implies that "bugs" and issues may still remain undiscovered until this phase of testing is complete. The alpha stage also means that the data may be corrupted, is not 100% validated or complete, and is subject to change. Finally, services may have downtime and the API schemas and calls are subject to change
+The Insects JSON REST API is actually in the alpha stage, which implies that "bugs" and issues may still remain undiscovered until this phase of testing is complete. The alpha stage also means that the data may be corrupted, is not 100% validated or complete, and is subject to change. Finally, services may have downtime and the API schemas and calls are subject to change
